@@ -1,5 +1,4 @@
 # - ZERO-SHOT -
-import os
 from llama_index.core import PromptTemplate
 from llama_index.llms.groq import Groq
 from dotenv import load_dotenv
