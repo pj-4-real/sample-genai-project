@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 llm = Groq(
-    groq_api_key=os.envion["GROQ_API_KEY"],
+    groq_api_key=os.getenv("GROQ_API_KEY"),
     model="openai/gpt-oss-120b",
     temperature=0
 )
@@ -33,3 +33,4 @@ def chat():
 
         print("-" * 80)
 
+chat()
